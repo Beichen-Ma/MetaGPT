@@ -74,6 +74,27 @@ above. The report must meet the following requirements:
 - Include all source URLs in APA format at the end of the report.
 """
 
+CONDUCT_RESEARCH_PROMPT = """ Reference Information
+{content}
+
+### Requirements
+Please provide a detailed research report in response to the following topic: "{topic}", using the information provided \
+above. The report must meet the following requirements:
+
+- Focus on directly addressing the chosen topic.
+- Ensure a well-structured and in-depth presentation, incorporating relevant facts where available.
+- The report should be formatted with Markdown syntax following APA style guidelines. Keep it plain without bold or italics.
+- Include all source URLs in APA format at the end of the report.
+- The report should be structured like this:
+    ""
+    Answer: Yes/No/Unclear
+
+    Explanation: Explanation of why the answer is yes or no.
+
+    References: - Reference 1 - Reference 2 - Reference 3
+    ""
+"""
+
 
 class CollectLinks(Action):
     """Action class to collect links from a search engine."""
