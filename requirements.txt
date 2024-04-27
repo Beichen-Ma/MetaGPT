@@ -70,3 +70,5 @@ qianfan==0.3.2
 dashscope==1.14.1
 rank-bm25==0.2.2  # for tool recommendation
 gymnasium==0.29.1
+flask
+flask_cors
